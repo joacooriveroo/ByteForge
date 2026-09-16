@@ -8,14 +8,19 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    background-color: #f5f5f5;
 
     h1 {
         font-size: 48px;
+        max-width: 700px;
+        line-height: 1.1;
     }
 
     p {
         font-size: 18px;
         max-width: 600px;
+        color: #555555;
+        line-height: 1.6;
     }
 }
 
@@ -29,6 +34,7 @@
 
     > p {
         margin-bottom: 30px;
+        color: #555555;
     }
 
     .productos-grid {
@@ -39,13 +45,36 @@
             background-color: v.$color-superficie;
             padding: 25px;
             flex: 1;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+
+            figure {
+                margin-bottom: 20px;
+                text-align: center;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: contain;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                figcaption {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
 
             h3 {
+                font-size: 20px;
                 margin-bottom: 15px;
             }
 
             p {
                 margin-bottom: 20px;
+                color: #555555;
+                line-height: 1.5;
             }
         }
     }
@@ -54,13 +83,17 @@
 .llamada-armados {
     padding: 60px 40px;
     text-align: center;
-    background-color: v.$color-superficie;
+    background-color: #f5f5f5;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 
     h2 {
+        font-size: 32px;
         margin-bottom: 15px;
     }
 
     p {
         margin-bottom: 25px;
+        color: #555555;
     }
 }

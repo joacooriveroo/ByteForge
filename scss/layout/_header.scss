@@ -1,8 +1,10 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
 
 .encabezado {
-    background-color: v.$color-superficie;
+    background-color: #ffffff;
     padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
 
     .navbar {
         display: flex;
@@ -22,6 +24,12 @@
 
         a {
             color: v.$color-texto;
+            font-weight: 500;
+            @include m.transicion(0.3s);
+
+            &:hover {
+                color: v.$color-principal;
+            }
         }
     }
 }

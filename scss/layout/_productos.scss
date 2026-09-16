@@ -12,9 +12,76 @@
         margin-bottom: 30px;
     }
 
+    .categoria-titulo {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: v.$color-texto;
+        border-bottom: 3px solid v.$color-principal;
+        padding-bottom: 10px;
+    }
+
     .productos-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+    }
+
+    .producto-card {
+        background-color: v.$color-superficie;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+
+        figure {
+            margin-bottom: 20px;
+            text-align: center;
+
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+                display: block;
+                margin: 0 auto;
+            }
+
+            figcaption {
+                margin-top: 10px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: v.$color-texto;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555555;
+        }
+    }
+}
+
+// Tablet
+@media (max-width: 1024px) {
+    .productos {
+        .productos-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+// Celular
+@media (max-width: 768px) {
+    .productos {
+        padding: 40px 20px;
+
+        .productos-grid {
+            grid-template-columns: 1fr;
+        }
     }
 }

@@ -21,7 +21,26 @@
     .armado-card {
         background-color: v.$color-superficie;
         padding: 25px;
+        border: 1px solid #dddddd;
         border-radius: 10px;
+
+        figure {
+            margin-bottom: 20px;
+            text-align: center;
+
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+                display: block;
+                margin: 0 auto;
+            }
+
+            figcaption {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
 
         h2 {
             color: v.$color-principal;
@@ -30,12 +49,34 @@
 
         p {
             margin-bottom: 20px;
+            color: #555555;
+            line-height: 1.5;
         }
 
         ul {
             display: flex;
             flex-direction: column;
             gap: 10px;
+        }
+    }
+}
+
+// Tablet
+@media (max-width: 1024px) {
+    .armados {
+        .armados-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+// Celular
+@media (max-width: 768px) {
+    .armados {
+        padding: 40px 20px;
+
+        .armados-grid {
+            grid-template-columns: 1fr;
         }
     }
 }

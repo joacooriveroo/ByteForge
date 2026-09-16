@@ -12,6 +12,8 @@
 
     > p {
         margin-bottom: 30px;
+        color: #555555;
+        line-height: 1.5;
     }
 
     .formulario {
@@ -25,17 +27,24 @@
             gap: 8px;
         }
 
+        label {
+            font-weight: 500;
+        }
+
         input,
         textarea {
             padding: 12px;
-            border: 1px solid #2d3036;
+            border: 1px solid #cccccc;
             border-radius: 6px;
-            background-color: v.$color-superficie;
+            background-color: #ffffff;
             color: v.$color-texto;
+            font-family: inherit;
+            font-size: 16px;
         }
 
         textarea {
             resize: vertical;
+            min-height: 140px;
         }
 
         .boton {
@@ -43,5 +52,12 @@
             cursor: pointer;
             align-self: flex-start;
         }
+    }
+}
+
+// Celular
+@media (max-width: 768px) {
+    .contacto {
+        padding: 40px 20px;
     }
 }

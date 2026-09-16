@@ -11,6 +11,8 @@
     > p {
         margin-bottom: 30px;
         max-width: 700px;
+        color: #555555;
+        line-height: 1.5;
     }
 
     .nosotros-contenido {
@@ -21,12 +23,38 @@
         article {
             background-color: v.$color-superficie;
             padding: 25px;
+            border: 1px solid #dddddd;
             border-radius: 10px;
 
             h2 {
                 color: v.$color-principal;
                 margin-bottom: 15px;
             }
+
+            p {
+                color: #555555;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// Tablet
+@media (max-width: 1024px) {
+    .nosotros {
+        .nosotros-contenido {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+// Celular
+@media (max-width: 768px) {
+    .nosotros {
+        padding: 40px 20px;
+
+        .nosotros-contenido {
+            grid-template-columns: 1fr;
         }
     }
 }
