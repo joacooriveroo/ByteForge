@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteForge | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navbar">
+            <a href="index.html" class="logo">ByteForge</a>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/productos.html">Productos</a></li>
+                <li><a href="pages/armados.html">Armados</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Armá la PC que querés</h1>
+            <p>Componentes y configuraciones para encontrar el equipo ideal para vos.</p>
+            <a href="pages/productos.html" class="boton">Ver productos</a>
+        </section>
+
+        <section class="productos-destacados" data-aos="fade-up">
+            <h2>Productos destacados</h2>
+            <p>Algunos componentes para mejorar o armar tu PC.</p>
+
+            <div class="productos-grid">
+                <article class="producto-card">
+                    <h3>GeForce RTX 5070</h3>
+                    <p>Placa de video pensada para gaming y alto rendimiento.</p>
+                    <a href="pages/productos.html">Ver producto</a>
+                </article>
+
+                <article class="producto-card">
+                    <h3>32 GB DDR5</h3>
+                    <p>Kit de memoria DDR5 para equipos de ultima generacion.</p>
+                    <a href="pages/productos.html">Ver producto</a>
+                </article>
+
+                <article class="producto-card">
+                    <h3>Ryzen 7 9800X3D</h3>
+                    <p>Procesador orientado a equipos gaming de alto rendimiento.</p>
+                    <a href="pages/productos.html">Ver producto</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="llamada-armados" data-aos="fade-up">
+            <h2>¿No sabés qué componentes elegir?</h2>
+            <p>Conocé nuestras configuraciones pensadas para diferentes tipos de uso y presupuesto.</p>
+            <a href="pages/armados.html" class="boton">Ver armados</a>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>ByteForge - Hardware y tecnología</p>
+        <p>&copy; <span id="year"></span> Todos los Derechos Reservados</p>
+    </footer>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

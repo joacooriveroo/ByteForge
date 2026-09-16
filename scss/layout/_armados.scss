@@ -1,0 +1,41 @@
+@use "../utilities/variables" as v;
+
+.armados {
+    padding: 60px 40px;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    > p {
+        margin-bottom: 30px;
+    }
+
+    .armados-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .armado-card {
+        background-color: v.$color-superficie;
+        padding: 25px;
+        border-radius: 10px;
+
+        h2 {
+            color: v.$color-principal;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

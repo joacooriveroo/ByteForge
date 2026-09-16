@@ -1,0 +1,3 @@
+@mixin transicion($duracion) {
+    transition: all $duracion ease;
+}

@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+%boton-base {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.boton {
+    @extend %boton-base;
+    @include m.transicion(0.3s);
+
+    background-color: v.$color-principal;
+    color: v.$color-texto;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}

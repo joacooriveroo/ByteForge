@@ -1,0 +1,11 @@
+@use "../utilities/variables" as v;
+
+.pie-pagina {
+    background-color: v.$color-superficie;
+    padding: 25px 40px;
+    text-align: center;
+
+    p {
+        margin: 5px 0;
+    }
+}

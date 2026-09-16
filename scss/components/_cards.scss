@@ -1,0 +1,12 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.producto-card {
+    border: 1px solid #2d3036;
+    border-radius: 10px;
+    @include m.transicion(0.3s);
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

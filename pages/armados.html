@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteForge | Armados</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">ByteForge</a>
+
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="armados.html">Armados</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="armados">
+            <h1>Armados recomendados</h1>
+            <p>Elegi una configuracion segun el rendimiento que necesitas.</p>
+
+            <div class="armados-grid">
+
+                <article class="armado-card">
+                    <h2>PC de entrada</h2>
+                    <p>Una configuracion equilibrada para tareas diaras y gaming liviano.</p>
+
+                    <ul>
+                        <li>Ryzen 5 5600G</li>
+                        <li>16 GB RAM</li>
+                        <li>SSD 500 GB</li>
+                        <li>Fuente 500W</li>
+                    </ul>
+                </article>
+
+                <article class="armado-card">
+                    <h2>PC Gaming</h2>
+                    <p>Una configuracion pensada para jugar con excelente rendimiento.</p>
+
+                    <ul>
+                        <li>Ryzen 7 9800X3D</li>
+                        <li>GeForce RTX 5070ti</li>
+                        <li>32 GB DDR5 6000MHZ</li>
+                        <li>SSD NVMe 1TB</li>
+                    </ul>
+                </article>
+
+                <article class="armado-card">
+                    <h2>Alto rendimiento</h2>
+                    <p>Una configuracion para gaming exigente y trabajos pesados.</p>
+
+                    <ul>
+                        <li>Ryzen 9 9950X3D</li>
+                        <li>GeForce RTX 5090 32GB</li>
+                        <li>64 GB DDR5 7200MHZ</li>
+                        <li>SSD NVMe 2TB</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>ByteForge - Hardware y tecnología</p>
+        <p>&copy; <span id="year"></span> Todos los Derechos Reservados</p>
+    </footer>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

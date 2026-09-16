@@ -1,0 +1,27 @@
+@use "../utilities/variables" as v;
+
+.encabezado {
+    background-color: v.$color-superficie;
+    padding: 20px 40px;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: v.$color-principal;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: flex;
+        gap: 25px;
+
+        a {
+            color: v.$color-texto;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteForge | Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">ByteForge</a>
+
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="armados.html">Armados</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos">
+            <h1>Nuestros productos</h1>
+            <p>Encontra los componentes que necesitas para armar o actualizar tu PC.</p>
+
+            <div class="productos-grid">
+
+                <article class="producto-card">
+                    <h2>Placas de video</h2>
+                    <p>Opciones para gaming, creación de contenido y uso profesional.</p>
+                </article>
+
+                <article class="producto-card">
+                    <h2>Procesadores</h2>
+                    <p>Procesadores para distintos niveles de rendimiento y presupuesto.</p>
+                </article>
+
+                <article class="producto-card">
+                    <h2>Memorias RAM</h2>
+                    <p>Memorias DDR5 para mejorar el rendimiento de tu equipo.</p>
+                </article>
+
+                <article class="producto-card">
+                    <h2>Motherboards</h2>
+                    <p>Placas madre compatibles con las últimas generaciones de hardware.</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>ByteForge - Hardware y tecnología</p>
+        <p>&copy; <span id="year"></span> Todos los Derechos Reservados</p>
+    </footer>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

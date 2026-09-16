@@ -1,0 +1,66 @@
+@use "../utilities/variables" as v;
+
+.hero {
+    min-height: 450px;
+    padding: 80px v.$espaciado-grande;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 600px;
+    }
+}
+
+.productos-destacados {
+    padding: 60px 40px;
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    > p {
+        margin-bottom: 30px;
+    }
+
+    .productos-grid {
+        display: flex;
+        gap: 20px;
+
+        .producto-card {
+            background-color: v.$color-superficie;
+            padding: 25px;
+            flex: 1;
+
+            h3 {
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.llamada-armados {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: v.$color-superficie;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}

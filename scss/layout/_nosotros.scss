@@ -1,0 +1,32 @@
+@use "../utilities/variables" as v;
+
+.nosotros {
+    padding: 60px 40px;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    > p {
+        margin-bottom: 30px;
+        max-width: 700px;
+    }
+
+    .nosotros-contenido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        article {
+            background-color: v.$color-superficie;
+            padding: 25px;
+            border-radius: 10px;
+
+            h2 {
+                color: v.$color-principal;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

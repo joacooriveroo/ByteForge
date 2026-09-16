@@ -1,0 +1,47 @@
+@use "../utilities/variables" as v;
+
+.contacto {
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    > p {
+        margin-bottom: 30px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border: 1px solid #2d3036;
+            border-radius: 6px;
+            background-color: v.$color-superficie;
+            color: v.$color-texto;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .boton {
+            border: none;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+    }
+}
