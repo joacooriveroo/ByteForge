@@ -1,14 +1,38 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
 
 .pie-pagina {
-    background-color: #ffffff;
+    background-color: v.$color-superficie;
     padding: 25px 40px;
     text-align: center;
-    border-top: 1px solid #e5e5e5;
 
     p {
         margin: 5px 0;
-        color: v.$color-texto;
-        font-size: 14px;
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 15px 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include m.transicion(0.3s);
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+
+            img {
+                width: 28px;
+                height: 28px;
+                object-fit: contain;
+                display: block;
+            }
+        }
     }
 }

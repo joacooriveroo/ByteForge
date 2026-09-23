@@ -22,13 +22,15 @@ ul {
 
 .encabezado {
   background-color: #ffffff;
-  padding: 20px 40px;
+  padding: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 .encabezado .navbar {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 .encabezado .logo {
   color: #6c63ff;
@@ -37,6 +39,8 @@ ul {
 }
 .encabezado .menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 25px;
 }
 .encabezado .menu a {
@@ -48,9 +52,22 @@ ul {
   color: #6c63ff;
 }
 
+@media (min-width: 768px) {
+  .encabezado {
+    padding: 20px 40px;
+  }
+  .encabezado .navbar {
+    flex-direction: row;
+    gap: 0;
+  }
+  .encabezado .menu {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
 .hero {
-  min-height: 450px;
-  padding: 80px 40px;
+  min-height: 350px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +76,7 @@ ul {
   background-color: #f5f5f5;
 }
 .hero h1 {
-  font-size: 48px;
+  font-size: 36px;
   max-width: 700px;
   line-height: 1.1;
 }
@@ -71,7 +88,7 @@ ul {
 }
 
 .productos-destacados {
-  padding: 60px 40px;
+  padding: 40px 20px;
 }
 .productos-destacados h2 {
   font-size: 32px;
@@ -83,6 +100,7 @@ ul {
 }
 .productos-destacados .productos-grid {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .productos-destacados .productos-grid .producto-card {
@@ -118,7 +136,7 @@ ul {
 }
 
 .llamada-armados {
-  padding: 60px 40px;
+  padding: 40px 20px;
   text-align: center;
   background-color: #f5f5f5;
   border-top: 1px solid #dddddd;
@@ -133,6 +151,38 @@ ul {
   color: #555555;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    padding: 60px 40px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .productos-destacados {
+    padding: 50px 40px;
+  }
+  .productos-destacados .productos-grid {
+    flex-direction: row;
+  }
+  .llamada-armados {
+    padding: 50px 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 450px;
+    padding: 80px 40px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .productos-destacados {
+    padding: 60px 40px;
+  }
+  .llamada-armados {
+    padding: 60px 40px;
+  }
+}
 .boton {
   display: inline-block;
   padding: 12px 20px;
@@ -158,7 +208,7 @@ ul {
 }
 
 .productos {
-  padding: 60px 40px;
+  padding: 40px 20px;
 }
 .productos h1 {
   font-size: 40px;
@@ -177,7 +227,7 @@ ul {
 }
 .productos .productos-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .productos .producto-card {
@@ -213,99 +263,52 @@ ul {
   color: #555555;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .productos .productos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .productos {
-    padding: 40px 20px;
+    padding: 60px 40px;
   }
   .productos .productos-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .pie-pagina {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   padding: 25px 40px;
   text-align: center;
-  border-top: 1px solid #e5e5e5;
 }
 .pie-pagina p {
   margin: 5px 0;
-  color: #1a1a1a;
-  font-size: 14px;
+}
+.pie-pagina .redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+.pie-pagina .redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.pie-pagina .redes-sociales a:hover {
+  transform: translateY(-3px);
+}
+.pie-pagina .redes-sociales a img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
-@media (max-width: 768px) {
-  .encabezado {
-    padding: 20px;
-  }
-  .encabezado .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .encabezado .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-  .hero {
-    min-height: 350px;
-    padding: 50px 20px;
-  }
-  .hero h1 {
-    font-size: 36px;
-  }
-  .productos-destacados {
-    padding: 40px 20px;
-  }
-  .productos-destacados .productos-grid {
-    flex-direction: column;
-  }
-  .llamada-armados {
-    padding: 40px 20px;
-  }
-  .productos {
-    padding: 40px 20px;
-  }
-  .productos h1 {
-    font-size: 32px;
-  }
-  .productos .productos-grid {
-    grid-template-columns: 1fr;
-  }
-  .armados {
-    padding: 40px 20px;
-  }
-  .armados h1 {
-    font-size: 32px;
-  }
-  .armados .armados-grid {
-    grid-template-columns: 1fr;
-  }
-  .nosotros {
-    padding: 40px 20px;
-  }
-  .nosotros h1 {
-    font-size: 32px;
-  }
-  .nosotros .nosotros-contenido {
-    grid-template-columns: 1fr;
-  }
-  .contacto {
-    padding: 40px 20px;
-  }
-  .contacto h1 {
-    font-size: 32px;
-  }
-  .contacto .formulario .boton {
-    width: 100%;
-  }
-}
 .armados {
-  padding: 60px 40px;
+  padding: 40px 20px;
 }
 .armados h1 {
   font-size: 40px;
@@ -316,7 +319,7 @@ ul {
 }
 .armados .armados-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .armados .armado-card {
@@ -355,21 +358,21 @@ ul {
   gap: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .armados .armados-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .armados {
-    padding: 40px 20px;
+    padding: 60px 40px;
   }
   .armados .armados-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .nosotros {
-  padding: 60px 40px;
+  padding: 40px 20px;
 }
 .nosotros h1 {
   font-size: 40px;
@@ -383,7 +386,7 @@ ul {
 }
 .nosotros .nosotros-contenido {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .nosotros .nosotros-contenido article {
@@ -401,21 +404,21 @@ ul {
   line-height: 1.5;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .nosotros .nosotros-contenido {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .nosotros {
-    padding: 40px 20px;
+    padding: 60px 40px;
   }
   .nosotros .nosotros-contenido {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .contacto {
-  padding: 60px 40px;
+  padding: 40px 20px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -461,9 +464,9 @@ ul {
   align-self: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .contacto {
-    padding: 40px 20px;
+    padding: 60px 40px;
   }
 }
 

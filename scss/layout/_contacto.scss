@@ -1,7 +1,7 @@
 @use "../utilities/variables" as v;
 
 .contacto {
-    padding: 60px 40px;
+    padding: 40px 20px;
     max-width: 800px;
     margin: 0 auto;
 
@@ -55,9 +55,9 @@
     }
 }
 
-// Celular
-@media (max-width: 768px) {
+// Escritorio
+@media (min-width: 1024px) {
     .contacto {
-        padding: 40px 20px;
+        padding: 60px 40px;
     }
 }
