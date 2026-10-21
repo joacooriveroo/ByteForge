@@ -27,7 +27,7 @@ ul {
 }
 .encabezado .navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -36,6 +36,9 @@ ul {
   color: #6c63ff;
   font-size: 24px;
   font-weight: bold;
+}
+.encabezado .navbar-collapse {
+  justify-content: flex-end;
 }
 .encabezado .menu {
   display: flex;
@@ -52,7 +55,7 @@ ul {
   color: #6c63ff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .encabezado {
     padding: 20px 40px;
   }
