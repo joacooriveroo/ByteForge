@@ -90,6 +90,28 @@ ul {
   line-height: 1.6;
 }
 
+.banner-principal {
+  width: 100%;
+  margin-top: 10px;
+}
+.banner-principal .carousel {
+  width: 100%;
+}
+.banner-principal .carousel-inner {
+  width: 100%;
+}
+.banner-principal .carousel-item {
+  text-align: center;
+}
+.banner-principal .carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+}
+
 .productos-destacados {
   padding: 40px 20px;
 }

@@ -1,3 +1,4 @@
+
 @use "../utilities/variables" as v;
 
 .hero {
@@ -21,6 +22,32 @@
         max-width: 600px;
         color: #555555;
         line-height: 1.6;
+    }
+}
+
+.banner-principal {
+    width: 100%;
+    margin-top: 10px;
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel-item {
+        text-align: center;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: none;
+            object-fit: contain;
+            object-position: center;
+        }
     }
 }
 
